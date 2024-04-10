@@ -22,10 +22,6 @@ a{
     text-align: right;
     margin: 10px;}
 
-#corpo{
-    
-}
-
 #banner{
     width: 95%;
     height: 300px;
@@ -36,32 +32,6 @@ a{
     background-repeat: no-repeat;
     background-position: top;}
 
-#img1{
-    width: 95%;
-    height: 300px;
-    margin: 2px 10px 30px 10px;
-    border-radius: 5px;
-    background-image: url("images/Ultimate\ Chocolate\ Cupcakes.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;}    
-
-#img2{
-    width: 99%;
-    height: 300px;
-    margin: 2px 10px 30px 10px;
-    border-radius: 5px;
-    background-image: url("images/Saiba\ como\ Faturar\ muito\ com\ Brigadeiros\ Gourmet\ -\ Guia\ Completo\ Passo\ a\ Passo\ -\ Acesse\ nosso\ Blog.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;}
-
-#img3{
-    width: 99%;
-    height: 300px;
-    margin: 2px 10px 30px 10px;
-    border-radius: 5px;
-    background-image: url("images/Bolos\ Decorados_\ +113\ Modelos\ Lindos\ para\ se\ Inspirar.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;}
+.img{
+    
+}
