@@ -1,0 +1,63 @@
+*{
+    margin 0%
+    padding: 0%;}
+
+#pai{
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 79, 79);
+        /* troca orientação dos elementos */
+    display: flex;
+        /* flex diretion = troca a direção do flexbox */
+        /* sempre usa plano cartesiano */
+        /* colocado em column inverte os comandos */
+
+        /* start - cima ou esquerda */
+        /* end - baixo ou direita */
+
+        /* collum = coluna */
+        /* row = linha */
+        /* termo-reverse = inverte a ordem */
+
+    flex-direction: row;
+        /* justifity-content = alinhamento eixo x */
+
+    justify-content: center;
+        /* aling-items = alinhamento eixo y */
+
+    align-items: center;
+
+        /* evitar distorção por falta de espaço = wrap */
+    flex-wrap: wrap;
+
+        /* margem entre elementos */
+    gap: 20px;
+}
+
+.filhos{
+    width: 35px;
+    height: 35px;
+    background-color: aqua;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(38, 53, 66);
+    display: flex;
+    flex-direction: row-reverse;
+    /* termo = space-between = colocar os elementos ao extremo do eixo */
+    /* termo = space-around = colocar os elementos ao extremo do eixo com espaçamento */
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    background-color: cornsilk;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
