@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    <div class="topic">
-        <h3>Shop in Games</h3>
+    <div id="topic">
+        <h3>Vaga Para - Shop in Games</h3>
         <hr>
         <form action="">
             <div class="space">
@@ -17,14 +17,66 @@
             </div>
 
             <div class="space">
-                <label for="Password"><p>Insira a sua senha</p></label>
-                <input required maxlength="8" type="password" id="Password">
+                <label for="Email"><p>Insira seu email</p></label>
+                <input required placeholder="fulano123@gmail.com" type="email" id="Email">
             </div>
 
             <div class="space">
-
+                <label for="age"><p>Insira sua idade</p></label>
+                <input required min="16" max="100" type="number" id="age">
             </div>
+
+            <div class="space">
+                <label for="date"><p>Data de nascimento</p></label>
+                <input required type="date" id="date">
+            </div>
+
+            <div class="space">
+                <label for="address"><p>Insira o seu endereço</p></label>
+                <input required type="text" id="address">
+            </div>
+            
+            <h3>Nivel de escolariedade</h3>
+            <hr>
+            <div class="space1">
+                    <label for="ensinoBasico"><h4>Ensino Básico</h4></label>
+                    <input required type="radio" id="ensinoBasico" name="ensino">
+
+                    <label for="ensinoMedio"><h4>Ensino Médio</h4></label>
+                    <input required type="radio" id="ensinoMedio" name="ensino">
+
+                    <label for="ensinoSuperior"><h4>Ensino Superior</h4></label>
+                    <input required type="radio" id="ensinoSuperior" name="ensino">
+            </div>
+
+            <h3>Objetivos</h3>
+            <hr>
+            <div class="space">
+                <label for="feedback"></label>
+                <textarea id="feedback" cols="30" rows="10"></textarea>
+            </div>
+
+            <h3>Experiência Profissional</h3>
+            <hr>
+            <div class="space">
+                <label for="file"></label>
+                <input type="file" id="file">
+            </div>
+
+            <h3>Cursos Complementares</h3>
+            <hr>
+            <div class="space">
+                <label for="file1"></label>
+                <input type="file" id="file1">
+            </div>
+
+            <div class="space2">
+                <button type="submit"><h3>Cadastrar</h3></button>
+                <button type="reset"><h3>Resetar Formulário</h3></button>
+            </div>
+
         </form>
     </div>
+    <hr>
 </body>
 </html>
