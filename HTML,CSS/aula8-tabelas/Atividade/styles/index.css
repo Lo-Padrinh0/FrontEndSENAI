@@ -3,6 +3,67 @@
     padding: 0%;
 }
 
+body{
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* formulario */
+
+#topic img{
+    width: auto;
+    height: 250px;
+}
+
+.space{
+    width: 200px;
+    height: auto;
+}
+
 input{
-    border: none ;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/* tabela */
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+th{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+td{
+    background-color: rgb(255, 255, 255);
+}
+
+th:hover{
+    background-color: #666666;
+}
+
+td:active{
+    border: 3px solid green;
+}
+
+thead{
+    width: 500px;
+    margin: auto 90%;
+    position: sticky;
+    top: -1px;
+}
+
+th:empty{
+    background-color: transparent;
+    border: none;
 }
