@@ -1,8 +1,22 @@
+@font-face{
+    font-family: Roboto;
+    src: url(../font/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gothic;
+    src: url(../font/sketch_gothic_school/Sketch\ Gothic\ School.ttf);
+}
+
 /* geral */
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Roboto, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Gothic;
 }
 
 section{
@@ -18,7 +32,7 @@ header{
 #banner{
     height: 500px;
     justify-content: center;
-    background-image: url(../Images/cabe.png);
+    background-image: url(../Images/geral/cabe.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -69,7 +83,9 @@ nav a{
 .topicoImagem{
     width: 100px;
     height: 100px;
-    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 100%;
     margin-top: 20px;
 }
@@ -81,4 +97,45 @@ nav a{
     background-color: transparent;
     padding: 6px;
     cursor: pointer;
+}
+
+#topicoDicas{
+    background-image: url(../Images/geral/dica.png);
+}
+
+#topicoNoticias{
+    background-image: url(../Images/geral/noticias.png);
+}
+
+#topicoEquipamento{
+    background-image: url(../Images/geral/equipamentos.png);
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.redes img{
+    width: 100%;
 }

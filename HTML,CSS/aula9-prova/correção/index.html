@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correção</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
@@ -26,27 +27,28 @@
     </header>
 
     <main>
+        <!-- topicos com imagens -->
         <section id="topicos">
             <!-- dicas -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoDicas"></div>
-                    <h3>Dicas</h3>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoDicas"></div>
+                    <h2>Dicas</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum expedita reprehenderit quia officiis dicta eaque suscipit harum quaerat nisi nihil eos voluptates, ipsum ut ipsa commodi consequatur, quos officia!</p>
                     <button type="button">VER MAIS</button>
             </div>
 
             <!-- Noticias -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoNoticias"></div>
-                    <h3>Dicas</h3>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoNoticias"></div>
+                    <h2>Notícias</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum expedita reprehenderit quia officiis dicta eaque suscipit harum quaerat nisi nihil eos voluptates, ipsum ut ipsa commodi consequatur, quos officia!</p>
                     <button type="button">VER MAIS</button>
             </div>
 
             <!-- Equipamento -->
             <div class="topicoGrupo">
-                <div class="topicoImagem" id="topicoEquipamento"></div>
-                    <h3>Dicas</h3>
+                <div class="animate__infinite animate__animated animate__pulse topicoImagem" id="topicoEquipamento"></div>
+                    <h2>Equipamento</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum expedita reprehenderit quia officiis dicta eaque suscipit harum quaerat nisi nihil eos voluptates, ipsum ut ipsa commodi consequatur, quos officia!</p>
                     <button type="button">VER MAIS</button>
             </div>
@@ -62,7 +64,32 @@
         <section id="emailSecao"></section>
     </main>
 
-    <footer></footer>
+    <!-- png = tamamho fixo, distorce a qualidade quando aumentado -->
+    <!-- <img width="600px" src="Images/apps.png.png" alt="png"> -->
+
+    <!-- svg = manda uma formúla e o computador monta a imagem dinamicamente -->
+    <!-- <img width="600px" src="Images/apps.svg.svg" alt="svg"> -->
+
+    <footer>
+        <div class="redes">
+            <div class="redesIcones">
+                <img src="Images/RedesSociais/iconescirculo/facebook_dark.png" alt="">
+            </div>
+            <a href="#">@Projeto Bikes OFICIAL</a>
+        </div>
+        <div class="redes">
+            <div class="redesIcones">
+                <img src="Images/RedesSociais/iconescirculo/twitter02_dark.png" alt="">
+            </div>
+            <a href="#">@Bikes</a>
+        </div>
+        <div class="redes">
+            <div class="redesIcones">
+                <img src="Images/RedesSociais/iconescirculo/orkut_dark.png" alt="">
+            </div>
+            <a href="#">@BikesOFICIAL</a>
+        </div>
+    </footer>
 
 </body>
 </html>
