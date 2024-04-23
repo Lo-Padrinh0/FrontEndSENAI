@@ -1,0 +1,33 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#destaque{
+    text-align: center;
+    width: 40%;
+    border-bottom: 2px solid rgb(252, 69, 69);
+}
+
+/* MAIN */
+
+main{
+    width: 100%;
+    display: flex;
+}
+
+#elizabeth{
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+}

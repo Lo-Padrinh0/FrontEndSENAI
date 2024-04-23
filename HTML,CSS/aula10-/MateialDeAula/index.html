@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expulsividade</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="style/mobile.css">
+    <!-- PRINT = versão impressa do site -->
+    <link rel="stylesheet" media="print" href="style/teste.css">
+    <!-- screen and (orientation: landscape) = celular em  -->
+    <link rel="stylesheet" media="screen and (orientation: landscape)" href="style/teste1.css">
+    <!-- screen and (orientation: portrait) =  -->
+    <link rel="stylesheet" media="screen and (orientation: portrait)" href="style/teste2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="btnMobile" onclick="btnMobileTrocar()" type="button">
+                <img src="images/menuIcon.svg" alt="menu Icon">
+            </button>
+            <ul id="menuMobile">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <ul id="menuPc">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <picture>
+            <source media="screen and (max-width : 860px)" srcset="images/mulherdancandoMenor.jpg">
+            <img src="images/mulherdancando.jpg" alt="mulher dancando">
+        </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error asperiores, impedit eum odio ratione modi voluptates atque nisi, repellat mollitia tempore. Dolorum tenetur unde est autem a perspiciatis quisquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error asperiores, impedit eum odio ratione modi voluptates atque nisi, repellat mollitia tempore. Dolorum tenetur unde est autem a perspiciatis quisquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor error asperiores, impedit eum odio ratione modi voluptates atque nisi, repellat mollitia tempore. Dolorum tenetur unde est autem a perspiciatis quisquam.</p>
+    </main>
+
+    <footer>
+        Todos os direitos reservados!
+    </footer>
+
+    <script>
+        //procedimento palavra()
+
+        //fimprocedimento
+
+        function btnMobileTrocar(){
+            if (menuMobile.style.display == "flex"){
+                menuMobile.style.display = "none";
+            }else{
+                menuMobile.style.display = "flex";
+            }
+        }
+        
+    </script>
+</body>
+</html>
