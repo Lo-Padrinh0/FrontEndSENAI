@@ -4,30 +4,141 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+button{
+    margin-top: 5px;
+    background-color: #F5124B;
+    border-color: #F5124B;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 /* HEADER */
 
 header{
     width: 100%;
-    padding: 5px 0px;
+    height: 65px;
     display: flex;
-    justify-content: center;
+    background-color: #2A2B2A;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+header h1{
+    padding-left: 10%;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row; 
+    justify-content: end;
+    list-style-type:none;
+    width: 55%;
+    gap: 10%;
 }
 
 #destaque{
-    text-align: center;
-    width: 40%;
+    width: 45%;
+    padding: 5px 0px;
     border-bottom: 2px solid rgb(252, 69, 69);
+}
+
+/* div separada */
+
+#elizabeth{
+    margin: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 10px;
+}
+
+#elizabeth img{
+    width: 100%;
+}
+
+#text{
+    width: 80%;
+    text-align: center;
+    color: black;
 }
 
 /* MAIN */
 
 main{
     width: 100%;
+    padding: 5px;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#elizabeth{
-    width: 80%;
-    flex-direction: row;
-    justify-content: center;
+#textmain{
+    width: 50%;
+}
+
+#titulodaArte{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#titulodaArte h3{
+    width: 50%;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    border-bottom: 2px solid rgb(252, 69, 69);
+}
+
+#titulodaArte img{
+    max-width: 100%;
+}
+
+#titulodaArte ul{
+    display: flex;
+    list-style-type:none;
+    width: 55%;
+    gap: 25px;
+}
+
+#titulodaArte li{
+    gap: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width : 850px){
+    #titulodaArte{
+        flex-direction: column;
+    }
 }
