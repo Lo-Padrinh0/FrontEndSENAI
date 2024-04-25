@@ -1,69 +1,68 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-body{
+body {
     margin: auto;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* formulario */
 
-#topic img{
+/* Formulário */
+#topic img {
     width: auto;
     height: 250px;
 }
 
-.space{
+.space {
     width: 200px;
     height: auto;
 }
 
-input{
+input {
     width: 200px;
     height: 40px;
     border: none;
     outline: none;
 }
 
-/* tabela */
-
-table{
+/* Tabela */
+table {
     border-collapse: collapse;
 }
 
-th, td{
-    border: 1px solid rgb(0, 0, 0);
+th, td {
+    border: 1px solid #000;
     padding: 8px;
 }
 
-th{
-    color: rgb(0, 0, 0);
-    background-color: #ffffff;
+th {
+    color: #000;
+    background-color: #fff;
 }
 
-td{
-    background-color: rgb(255, 255, 255);
+td {
+    background-color: #fff;
 }
 
-th:hover{
-    background-color: #666666;
+th:hover {
+    background-color: #666;
 }
 
-td:active{
+td:active {
     border: 3px solid green;
 }
 
-thead{
+thead {
     width: 500px;
-    margin: auto 90%;
+    margin: auto;
     position: sticky;
     top: -1px;
 }
 
-th:empty{
+th:empty {
     background-color: transparent;
     border: none;
 }
