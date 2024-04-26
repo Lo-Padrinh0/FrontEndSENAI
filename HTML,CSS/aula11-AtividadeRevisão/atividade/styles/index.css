@@ -20,24 +20,22 @@ a{
 
 header{
     width: 100%;
-    
+    display: flex;
+    justify-content: space-between;
     background-color: #ba2d2d;
 }
 
 header ul{
     display: flex;
     flex-direction: row;
-    justify-content: left;
     gap: 10px;
     list-style: none;
     align-items: center;
 }
 
-#AbraSuaConta li{
-    display: flex;
+#AbraSuaConta a{
+    border: 2px solid var(--corBranco);
     flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: right;
+    justify-content: center;
     list-style: none;
 }
