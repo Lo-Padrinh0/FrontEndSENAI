@@ -3,20 +3,26 @@
     --corVermelha : #ba2d2d;
     --corLaranja : #f2511b;
     --corAmarela : #f2861b;
-    --corNeon : #c7c730;
+    --corNeon : #c7c7306c;
     --corBranco : white;
 }
 
 *{
     margin: 0%;
     padding: 0%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 a{
     text-decoration: none;
     color: var(--corBranco);
 }
+
+button{
+    cursor: pointer;
+}
+
+/* HEADER */
 
 header{
     width: 100%;
@@ -25,17 +31,162 @@ header{
     background-color: #ba2d2d;
 }
 
-header ul{
+nav ul{
+    margin: 5px 20px;
     display: flex;
-    flex-direction: row;
-    gap: 10px;
+    align-items: center;
     list-style: none;
+    gap: 40px;
+}
+
+nav ul img{
+    width: 60px;
+}
+
+#AbreSuaConta{
+    display: flex;
+    align-items: center;
+    margin: 5px 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid var(--corBranco);
+}
+
+/* MAIN */
+
+#banner{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #302727;
+    background-image: url(../images/banner.jpg);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    top: 50%;
+    position: absolute;
+    padding: 10px;
+    background-color: var(--corNeon);
+}
+
+.text h2{
+    font-size: 25pt;
+    margin: 5px 0px;
+    margin-left: 10px;
+}
+
+.text p{
+    font-size: 10pt;
+    margin: 5px 0px;
+}
+
+.text button{
+    width: 200px;
+    border-radius: 4px;
+    align-items: center;
+    margin: 15px 0px;
+    padding: 10px;
+    border: 2px solid var(--corAmarela);
+    background-color: var(--corMarrom);
+}
+
+/* PAGAMENTO MAIN */
+
+#pagamento{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#Pagamento{
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pagamento button{
+    width: 200px;
+    height: 280px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+/* SERVIÇOS MAIN */
+
+#servicos{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 40px 0px;
+    justify-content: space-between;
+    background-color: #302727;
+}
+
+#contrate{
+    width: 45%;
+    display: flex;
+    font-size: 18pt;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--corBranco);
+}
+
+#contrate h2{
+    margin: 10px 25px;
+}
+
+#contrate p{
+    margin: 5px 15px;
+}
+
+#servicos img{
+    margin: 20px 0px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+/* CLIENTE */
+
+#cliente{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#AbraSuaConta a{
-    border: 2px solid var(--corBranco);
-    flex-direction: row;
+#cliente h2{
+    margin-bottom: 20px;
+}
+
+#clienteImg{
+    width: 60%;
+    height: 300px;
+    display: flex;
     justify-content: center;
-    list-style: none;
+    gap: 100px;
+}
+
+.clienteImg{
+    width: 20%;
+    margin-top: 20px;
+}
+
+.clienteImg img{
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
 }
