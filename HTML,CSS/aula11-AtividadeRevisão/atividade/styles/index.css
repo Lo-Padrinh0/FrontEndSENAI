@@ -22,13 +22,22 @@ button{
     cursor: pointer;
 }
 
-/* HEADER */
+/* HEADER e FOOTER */
 
-header{
+header , footer{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    color: white;
     background-color: #ba2d2d;
+    padding: 20px 0px;
+}
+
+header{
+    justify-content: space-between;
+}
+
+footer{
+    justify-content: center;
 }
 
 nav ul{
@@ -43,16 +52,25 @@ nav ul img{
     width: 60px;
 }
 
-#AbreSuaConta{
+header button{
     display: flex;
     align-items: center;
     margin: 5px 20px;
     padding: 5px;
+    background-color: transparent;
     border-radius: 5px;
-    border: 2px solid var(--corBranco);
+    border: 1px solid var(--corBranco);
 }
 
 /* MAIN */
+
+main{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #banner{
     width: 100%;
@@ -120,8 +138,9 @@ nav ul img{
 .pagamento button{
     width: 200px;
     height: 280px;
+    background-color: transparent;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid var(--corMarrom);
     border-radius: 2px;
 }
 
@@ -161,32 +180,87 @@ nav ul img{
 
 /* CLIENTE */
 
+#cliente h3{
+    display: flex;
+    justify-content: center;
+}
+
 #cliente{
     width: 100%;
+}
+
+#Cartao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cartao{
+    width: 300px;
+    height: 300px;
+    margin: 30px 0px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cartao1{
+    background-image: url(../images/cartaoUm.jpg);
+}
+
+#cartao2{
+    background-image: url(../images/cartaoDois.jpg);
+}
+
+#cartao3{
+    background-image: url(../images/cartaoTres.jpg);
+}
+
+/* HORARIO */
+
+#horario{
+    width: 50%;
+    border: 1px solid rgb(124, 123, 123);
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.336);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
 }
 
-#cliente h2{
-    margin-bottom: 20px;
+table{
+    width: 98%;
+    border-collapse: collapse;
+    margin: 9px 0px;
 }
 
-#clienteImg{
-    width: 60%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+th{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ba2d2d;
+    color: white;
+    padding: 5px;
 }
 
-.clienteImg{
-    width: 20%;
-    margin-top: 20px;
+td{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.459);
 }
 
-.clienteImg img{
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
+th:empty{
+    background-color: transparent;
+    border: none;
+}
+
+th:hover{
+    background-color: white;
+    color: #ba2d2d;
+}
+
+th:empty:hover{
+    background-color: transparent;
 }
