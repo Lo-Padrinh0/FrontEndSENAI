@@ -1,4 +1,4 @@
-function btnMobillee() {
+function btnMobile() {
     var menuMobile = document.getElementById('menumobile');
     var menuDesktop = document.getElementById('menudesktop');
 
