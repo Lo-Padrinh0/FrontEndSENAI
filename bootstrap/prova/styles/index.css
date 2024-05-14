@@ -1,3 +1,4 @@
+/* geral */
 :root{
     --branco : #ffffff;
     --rosa : #ff67d9;
@@ -5,14 +6,20 @@
     --cinzaClaro: #686767;
 }
 
-body{
-    height: 100vh;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(122, 14, 113) 100%);
+/* header */
+header{
+    background-color: var(--preto);
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 20%, rgb(122, 14, 113) 100%);
 }
 
 .nav-link, .active .navbar-link.show{
-    color: var(--branco);  
+    color: var(--branco);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
@@ -35,6 +42,30 @@ body{
     width: 50px;
 }
 
+/* localização */
+#lock{
+    border: 2px solid var(--rosa);
+    width: 60%;
+}
+
+#lock h4{
+    color: var(--branco);
+}
+
+#maps{
+    width: 100%;
+    height: 100%;
+}
+
+.border-bottom {
+    border-bottom: 2px solid var(--rosa)!important;
+}
+
+/* footer */
+footer{
+    background-color: var(--preto);
+}
+
 /* menu lateral */
 #menuLateral{
     width: 300px;
@@ -50,4 +81,96 @@ body{
 
 input::placeholder{
     color: var(--branco)!important;
+}
+
+
+/* SOBRE NÓS */
+#main{
+    padding-bottom: 15px;
+}
+
+#main h3{
+    color: var(--branco);
+    border-bottom: 2px solid ;
+}
+
+#main h4{
+    color: var(--branco);
+}
+
+#main h5{
+    height: 100%;
+    color: var(--rosa);
+}
+
+/* mobile */
+#apresentacao{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#objetivo{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#dedicacao{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#finalizacao{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+/* Pc */
+#apresentacaoPc{
+    width: 60%;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#objetivoPc{
+    width: 60%;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#dedicacaoPc{
+    width: 60%;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#finalizacaoPc{
+    width: 60%;
+    height: 400px;
+    padding: 10px;
+    background-color: #00000079;
+    border: 1px solid #ff67d9;
+}
+
+#finalizacaoPc img{
+    height: 98%;
+}
+
+#pcFinalizacao{
+    margin-left: 100px;
+    margin-right: 170px;
 }
