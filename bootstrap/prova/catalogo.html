@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Puccino</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/catscoffee.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" href="#">
+                    <img src="images/catscoffee.jpg" alt="CatPuccino">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse w-100 justify-content-center navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="sobrenos.html">SOBRE NÓS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="franqueados.html">FRANQUEADOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main id="maincatalogo" class="d-flex flex-column align-items-center justify-content-center gap-3 text-center">
+        <!-- CAROUSEL -->
+        <section id="banner" class="container-fluid">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/lofi-catCoffee.jpg" class="d-flex d-lg-none w-100" alt="">
+                        <img src="images/lofi-catCoffePc.png" class="d-none d-lg-flex w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/lofi-catCoffee2.jpg" class="d-flex d-lg-none w-100" alt="">
+                        <img src="images/lofi-catCoffee2Pc.png" class="d-none d-lg-flex w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/lofi-catCoffee3.jpg" class="d-flex d-lg-none w-100" alt="">
+                        <img src="images/lofi-catCoffee3Pc.png" class="d-none d-lg-flex w-100" alt="">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- catalogo mobile -->
+        <section id="catalogo" class="d-flex flex-column align-items-center d-lg-none w-100 gap-3">
+            <h3 class="text-white">CATALOGO</h3>
+            <h5>Nossos Melhores Cafés</h5>
+            <div id="catalogoItems" class="d-flex justify-content-center gap-4 mx-3">
+                <!-- coleira -->
+                <!-- EXPRESSO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/caféExpresso.png" class="card-img-top" alt="caféExpresso">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Expresso</h5>
+                        <h5>R$ 10,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#expresso" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MILKSHAKE -->
+                <div class="card p-2 border-white bg-transparent" >
+                    <img src="images/milkshake.png" class="card-img-top" alt="milkshake">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Milk Shake</h5>
+                        <h5>R$ 8,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#milkshake" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- CAPUCCINO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/Capuccino.png" class="card-img-top" alt="Capuccino">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Capuccino</h5>
+                        <h5>R$ 5,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#capuccino" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="catalogoItems" class="d-flex justify-content-center gap-4 mx-3">
+                <!-- coleira -->
+                <!-- AMERICANO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/americano.png" class="card-img-top" alt="americano">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Americano</h5>
+                        <h5>R$ 7,00</h5>
+                        <button class="btn btn-primary" data-bs-target="#americano" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MACCHIATO -->
+                <div class="card p-2 border-white bg-transparent" >
+                    <img src="images/Macchiato.png" class="card-img-top" alt="macchiato">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Macchiato</h5>
+                        <h5>R$ 11,00</h5>
+                        <button class="btn btn-primary" data-bs-target="#macchiato" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MOCHA -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/mocha.png" class="card-img-top" alt="mocha">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-white">Mocha</h5>
+                        <h5>R$ 4,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#mocha" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- catalogo pc -->
+        <section id="catalogo" class="d-flex flex-column align-items-center d-none d-lg-flex w-100 gap-2">
+            <h3 class="text-white">CATALOGO</h3>
+            <h5>Nossos Melhores Cafés</h5>
+            <div id="catalogoItems" class="d-flex justify-content-center gap-5">
+                <!-- coleira -->
+                <!-- EXPRESSO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/caféExpresso.png" class="card-img-top" alt="caféExpresso">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Expresso</h4>
+                        <h5>R$ 10,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#expresso" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MILK SHAKE -->
+                <div class="card p-2 border-white bg-transparent" >
+                    <img src="images/milkshake.png" class="card-img-top" alt="milkshake">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Milk Shake</h4>
+                        <h5>R$ 8,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#milkshake" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- CAPUCCINO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/Capuccino.png" class="card-img-top" alt="Capuccino">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Capuccino</h4>
+                        <h5>R$ 5,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#capuccino" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- AMERICANO -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/americano.png" class="card-img-top" alt="americano">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Americano</h4>
+                        <h5>R$ 7,00</h5>
+                        <button class="btn btn-primary" data-bs-target="#americano" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MACCHIATO -->
+                <div class="card p-2 border-white bg-transparent" >
+                    <img src="images/Macchiato.png" class="card-img-top" alt="macchiato">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Macchiato</h4>
+                        <h5>R$ 11,00</h5>
+                        <button class="btn btn-primary" data-bs-target="#macchiato" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+                <!-- MOCHA -->
+                <div class="card p-2 border-white bg-transparent">
+                    <img src="images/mocha.png" class="card-img-top" alt="mocha">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="card-title text-white">Mocha</h4>
+                        <h5>R$ 4,50</h5>
+                        <button class="btn btn-primary" data-bs-target="#mocha" data-bs-toggle="modal" type="button">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid text-center text-white py-3">Todos direitos reservados ao @CatPuccino</footer>
+    
+    <!-- menulateral -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="menuLateral" aria-labelledby="offcanvasExampleLabel">
+        <div class="d-flex flex-column justify-content-between offcanvas-body">
+            <div id="parteSuperior" class="px-2">
+                <img src="images/catscoffee.jpg" width="50px" alt="coffee">
+                <hr>
+                <!-- links -->
+                <a href="#" class="nav-link py-2">Home</a>
+                <a href="#" class="nav-link py-2">Pedidos</a>
+            </div>
+            <div id="parteInferior" class="px-2">
+                <a href="#" class="nav-link">Instalar nosso app</a>
+                <hr>
+                <div class="d-flex align-items-center gap-3">
+                    <img width="50px" height="50px" src="images/Cat.jpg" alt="Cat">
+                    Anonymous
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal da coleira -->
+    <!-- Expresso -->
+    <div class="modal fade" id="expresso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Expresso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="imgprodutos" src="images/caféExpresso.png" class="w-100" alt="Expresso">
+                    <h5>R$ 10,50</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Milk Shake -->
+    <div class="modal fade" id="milkshake" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Milk Shake</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="imgprodutos" src="images/milkshake.png" class="w-100" alt="milkshake">
+                    <h5>R$ 8,50</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Capuccino -->
+    <div class="modal fade" id="capuccino" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Capuccino</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="" src="images/Capuccino.png" class="w-100" alt="capuccino">
+                    <h5>R$ 5,50</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Americano -->
+    <div class="modal fade" id="americano" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Americano</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="imgprodutos" src="images/americano.png" class="w-100" alt="americano">
+                    <h5>R$ 7,00</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Macchiato -->
+    <div class="modal fade" id="macchiato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Macchiato</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="imgprodutos" src="images/Macchiato.png" class="w-100" alt="macchiato">
+                    <h5>R$ 11,00</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mocha -->
+    <div class="modal fade" id="mocha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div id="produtos" class="modal-content d-flex flex-column align-items-center">
+                <div class="modal-header w-100">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mocha</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-items-center gap-2">
+                    <img id="imgprodutos" src="images/mocha.png" class="w-100" alt="mocha">
+                    <h5>R$ 4,50</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-success">
+                        Adicionar aos pedidos
+                        <img src="images/cart4.svg" alt="cart4">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

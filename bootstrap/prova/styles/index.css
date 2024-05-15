@@ -85,20 +85,20 @@ input::placeholder{
 
 
 /* SOBRE NÓS */
-#main{
+#mainsobrenos{
     padding-bottom: 15px;
 }
 
-#main h3{
+#mainsobrenos h3{
     color: var(--branco);
     border-bottom: 2px solid ;
 }
 
-#main h4{
+#mainsobrenos h4{
     color: var(--branco);
 }
 
-#main h5{
+#mainsobrenos h5{
     height: 100%;
     color: var(--rosa);
 }
@@ -139,23 +139,53 @@ input::placeholder{
 /* Pc */
 #apresentacaoPc{
     width: 60%;
+    height: 400px;
     padding: 10px;
     background-color: #00000079;
     border: 1px solid #ff67d9;
+}
+
+#apresentacaoPc img{
+    height: 98%;
+}
+
+#pcApresentacao{
+    margin-left: 170px;
+    margin-right: 100px;
 }
 
 #objetivoPc{
     width: 60%;
+    height: 400px;
     padding: 10px;
     background-color: #00000079;
     border: 1px solid #ff67d9;
 }
 
+#objetivoPc img{
+    height: 98%;
+}
+
+#pcObjetivo{
+    margin-left: 100px;
+    margin-right: 170px;
+}
+
 #dedicacaoPc{
     width: 60%;
+    height: 400px;
     padding: 10px;
     background-color: #00000079;
     border: 1px solid #ff67d9;
+}
+
+#dedicacaoPc img{
+    height: 98%;
+}
+
+#pcDedicacao{
+    margin-left: 170px;
+    margin-right: 100px;
 }
 
 #finalizacaoPc{
@@ -173,4 +203,57 @@ input::placeholder{
 #pcFinalizacao{
     margin-left: 100px;
     margin-right: 170px;
+}
+
+
+/* CATALOGO */
+#maincatalogo{
+    padding-bottom: 15px;
+}
+
+#catalogo h3, #catalogo h4{
+    color: var(--laranja);
+}
+
+.card h5{
+    color: var(--verde);
+}
+
+.card-body button{
+    background-color: var(--rosa)!important;
+    border-radius: 0%!important;
+    border: none!important;
+    color: var(--preto)!important;
+}
+
+#adote h3{
+    color: var(--rosa);
+}
+
+#adotePet h4{
+    color: var(--azul);
+}
+
+.btn-close{
+    background: #fffffffa var(--bs-btn-close-bg) center / 1em auto no-repeat
+}
+
+#produtos{
+    border: 2px solid var(--branco);
+    color: var(--rosa)!important;
+    background-color: #000000ba !important;
+}
+
+#imgprodutos{
+    border: 2px solid var(--branco);
+    border-radius: 5px!important;
+}
+
+/* FRANQUEADOS */
+#catalogofranqueados{
+    margin-bottom: 10px;
+}
+
+#catalogofranqueados h4{
+    color: var(--rosa);
 }

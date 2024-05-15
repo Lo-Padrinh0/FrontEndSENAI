@@ -23,7 +23,7 @@
                 <div class="collapse w-100 justify-content-center navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 d-flex justify-content-center me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sobrenos.html">SOBRE NÓS</a>
@@ -32,7 +32,7 @@
                             <a class="nav-link" href="catalogo.html">CATALOGO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="franqueados.html">FRANQUEADOS</a>
+                            <a class="nav-link active" aria-current="page" href="franqueados.html">FRANQUEADOS</a>
                         </li>
                     </ul>
                 </div>
@@ -70,69 +70,49 @@
             </div>
         </section>
 
-        <!-- catalago mobile -->
-        <section id="catalogo" class="d-flex flex-column align-items-center d-lg-none w-100 gap-2">
-            <h3 class="text-white">CATALOGO</h3>
-            <h5>Recomendações do chef gato!</h5>
+        <!-- franqueados -->
+        <!-- mobile -->
+        <section id="catalogofranqueados" class="d-flex flex-column align-items-center d-lg-none w-100 gap-3">
+            <h3 class="text-white">FRANQUEADOS</h3>
+            <h4>Nossas Parcerias de Cafés</h4>
             <div id="catalogoItems" class="d-flex justify-content-center gap-4 mx-3">
-                <!-- coleira -->
-                <div class="card p-2 border-white bg-transparent">
-                    <img src="images/caféExpresso.png" class="card-img-top" alt="caféExpresso">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title text-white">Expresso</h5>
+                <div class="card p-2 border-white bg-transparent gap-2">
+                    <img src="images/Okami`s Koffee.png" class="card-img-top" alt="caféExpresso">
+                    <div class="card-body d-flex flex-column align-items-center gap-3">
+                        <h5 class="card-title text-white">Okami's Koffee</h5>
+                        <button class="btn btn-primary" type="button">Ver Sobre</button>
                     </div>
                 </div>
-                <div class="card p-2 border-white bg-transparent" >
-                    <img src="images/milkshake.png" class="card-img-top" alt="milkshake">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title text-white">Milk Shake</h5>
-                    </div>
-                </div>
-                <div class="card p-2 border-white bg-transparent">
-                    <img src="images/Capuccino.png" class="card-img-top" alt="Capuccino">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h5 class="card-title text-white">Capuccino</h5>
+                <div class="card p-2 border-white bg-transparent gap-2">
+                    <img src="images/Eyze Coffee.png" class="card-img-top" alt="caféExpresso">
+                    <div class="card-body d-flex flex-column align-items-center gap-3">
+                        <h5 class="card-title text-white">Eyze Coffee</h5>
+                        <button class="btn btn-primary" type="button">Ver Sobre</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- catalogo pc -->
-        <section id="catalogo" class="d-flex flex-column align-items-center d-none d-lg-flex w-100 gap-2">
-            <h3 class="text-white">CATALOGO</h3>
-            <h5>Recomendações do chef gato!</h5>
-            <div id="catalogoItems" class="d-flex justify-content-center gap-5">
-                <!-- coleira -->
-                <div class="card p-2 border-white bg-transparent">
-                    <img src="images/caféExpresso.png" class="card-img-top" alt="caféExpresso">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h4 class="card-title text-white">Café Expresso</h4>
+        <!-- pc -->
+        <section class="d-flex flex-column align-items-center d-none d-lg-flex w-100 gap-3">
+            <h3 class="text-white">FRANQUEADOS</h3>
+            <div id="catalogoItems" class="d-flex justify-content-center gap-4 mx-3">
+                <div class="card p-2 border-white bg-transparent gap-2">
+                    <img src="images/Okami`s Koffee.png" class="card-img-top" alt="Okami">
+                    <div class="card-body d-flex flex-column align-items-center gap-3">
+                        <h4 class="card-title text-white">Okami's Koffee</h4>
+                        <button class="btn btn-primary"type="button">Ver Sobre</button>
                     </div>
                 </div>
-                <div class="card p-2 border-white bg-transparent" >
-                    <img src="images/milkshake.png" class="card-img-top" alt="milkshake">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h4 class="card-title text-white">Milk Shake</h4>
-                    </div>
-                </div>
-                <div class="card p-2 border-white bg-transparent">
-                    <img src="images/Capuccino.png" class="card-img-top" alt="Capuccino">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <h4 class="card-title text-white">Capuccino</h4>
+                <div class="card p-2 border-white bg-transparent gap-2">
+                    <img src="images/Eyze Coffee.png" class="card-img-top" alt="Eyze">
+                    <div class="card-body d-flex flex-column align-items-center gap-3">
+                        <h4 class="card-title text-white">Eyze Coffee</h4>
+                        <button class="btn btn-primary" type="button">Ver Sobre</button>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="lock" class="d-flex flex-column align-items-center justify-content-center p-2 d-lg-none">
-            <h4 class="border-bottom">Cat-Puccino</h4>
-            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.0973400575726!2d-47.83497526889601!3d-15.820110054870446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2333d95d4d7d%3A0x13aa5881ffef5aaa!2sLifebox%20Burgers%2C%20Steaks%20and%20Shakes!5e0!3m2!1spt-BR!2sbr!4v1715711237251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        <section id="lock" class="d-flex flex-column align-items-center justify-content-center p-2 d-none d-lg-flex">
-            <h4 class="border-bottom">Cat-Puccino</h4>
-            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.0973400575726!2d-47.83497526889601!3d-15.820110054870446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2333d95d4d7d%3A0x13aa5881ffef5aaa!2sLifebox%20Burgers%2C%20Steaks%20and%20Shakes!5e0!3m2!1spt-BR!2sbr!4v1715711237251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-
     </main>
 
     <!-- footer -->
